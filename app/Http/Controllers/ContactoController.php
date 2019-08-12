@@ -24,8 +24,9 @@ class ContactoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        return view('contactos.create');
+    {       $contactos= Contacto::all();
+
+        return view('contactos.create', compact('contactos'));
     }
 
     /**
