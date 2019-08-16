@@ -1,94 +1,100 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>@yield('title')</title>
-    <link rel="stylesheet" href="../css/font.css">
-  <link rel="stylesheet" href="../css/main.css">
-    <link href="../css/estilo.css" rel="stylesheet">
-    <link href="../css/heroic-features.css" rel="stylesheet">
+  <title>Atenea</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="../img/ico.png">
 
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link href="css/heroic-features.css" rel="stylesheet">
-
+ <style>
+    
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
+</head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">Atenea</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                      <span class="sr-only">(current)</span>
-                    </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#servicios">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#nosotros">Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Language
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">English</a>
-                    <a class="dropdown-item" href="/contactos/">Spanish</a>
-                    
-                  </div>
-                </li>
-            </ul>
-          </div>
+    <body data-spy="scroll" data-target="#navbarsExampleDefault">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Atenea</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item  mr-4">
+                            <a class="nav-link" href="#carouselFull">Home </a>
+                        </li>
+                        <li class="nav-item  mr-4">
+                            <a class="nav-link" href="#servicios">Services</a>
+                        </li>
+                        <li class="nav-item  mr-4">
+                            <a class="nav-link" href="#nosotros">Us</a>
+                        </li>
+                        <li class="nav-item  mr-4">
+                            <a class="nav-link" href="#contacto">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Language
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">English</a>
+                              <a class="dropdown-item" href="/contactos/">Spanish</a>
+                            </div>
+                          </li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../img/atenea.png" alt="Los Angeles">
+      
+    </div>
+    <div class="carousel-item">
+      <img src="../img/con0.jpg" alt="Chicago" >
+      <div class="carousel-caption">
+          <h3>Contact us</h3>
+          <p>Dare to improve</p>
         </div>
-      </nav>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('../img/atenea.png')">
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="display-4"></h2>
-                <p class="lead"></p>
-              </div>
-            </div>
-            <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('../img/con1.jpg')">
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="display-4">Consultances</h2>
-                <p class="lead"></p>
-              </div>
-            </div>
-            <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('../img/con3.jpg')">
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="display-4">Contact us</h2>
-                <p class="lead">and be part of the innovation</p>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-        </div>
-      </header>
+    </div>
+    <div class="carousel-item">
+      <img src="../img/con2.png" alt="New York">
+      <div class="carousel-caption">
+        <h3>Consulting service        </h3>
+        <p>Improve your processes        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
       
       
       
@@ -99,7 +105,7 @@
         <div class="row">
         <div class="col-sm">
         
-          <div class="card text-center" style="width: 21rem;">
+          <div class="card text-center" ">
             <img style="width:100px; height:100px;" class="card-img-top rounded-circle mx-auto d-block" src="../img/consul.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Consultance</h5>
@@ -110,7 +116,7 @@
         </div>
         <div class="col-sm">
         
-          <div class="card text-center" style="width: 21rem;">
+          <div class="card text-center" >
             <img style="width:100px; height:100px;" class="card-img-top rounded-circle mx-auto d-block" src="../img/desa.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Web development</h5>
@@ -122,7 +128,7 @@
         
         <div class="col-sm">
         
-          <div class="card text-center" style="width: 21rem;">
+          <div class="card text-center">
             <img style="width:100px; height:100px;" class="card-img-top rounded-circle mx-auto d-block" src="../img/java.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Desktop Apps</h5>
@@ -155,29 +161,29 @@
           <div class="jumbotron my-4" style="background-color: white">
               <h1 class="display-3">Our team</h1>
         <div class="card-deck" >
-          <div class="card text-center" class="card border-primary mb-3" style="max-width: 15rem;">
-            <img style="width:120px; height:120px;" class="card-img-top rounded-circle mx-auto d-block" src="../img/Dania.jpeg" alt="Card image cap">
+          <div class="card text-center" class="card border-primary mb-3" >
+            <img style="width:200px; height:200px;" class="card-img-top rounded-circle mx-auto d-block" src="../img/Dania.jpeg" alt="Card image cap">
             <div class="card-body text-primary">
               <h5 class="card-title">Dania Favela</h5>
               <p class="card-text">Specialist in groups high-performance teams and finances</p>
             </div>
           </div>
-          <div class="card text-center" class="card border-primary mb-3" style="max-width: 15rem;">
-            <img style="width:120px; height:120px;" class="card-img-top rounded-circle mx-auto d-block" src="../img/Said.jpeg" alt="Card image cap">
+          <div class="card text-center" class="card border-primary mb-3" >
+            <img style="width:200px; height:200px;" class="card-img-top rounded-circle mx-auto d-block" src="../img/Said.jpeg" alt="Card image cap">
             <div class="card-body text-primary">
               <h5 class="card-title">Said Castañeda</h5>
               <p class="card-text">Specialist in web development and mobile apps</p>
             </div>
           </div>
-          <div class="card text-center" class="card border-primary mb-3" style="max-width: 15rem;">
-            <img style="width:120px; height:120px;" class="card-img-top rounded-circle mx-auto d-block" src="../img/Xiulma.jpg" alt="Card image cap">
+          <div class="card text-center" class="card border-primary mb-3">
+            <img style="width:200px; height:200px;" class="card-img-top rounded-circle mx-auto d-block" src="../img/Xiulma.jpg" alt="Card image cap">
             <div class="card-body text-primary">
               <h5 class="card-title">Xiulma Soto</h5>
               <p class="card-text">Specialist in database and information gathering</p>
             </div>
           </div>
-          <div class="card text-center" class="card border-primary mb-3" style="max-width: 15rem;">
-            <img style="width:120px; height:120px;" class="card-img-top rounded-circle mx-auto d-block" src="../img/Luis.jpg" alt="Card image cap">
+          <div class="card text-center" class="card border-primary mb-3">
+            <img style="width:200px; height:200px;" class="card-img-top rounded-circle mx-auto d-block" src="../img/Luis.jpg" alt="Card image cap">
             <div class="card-body text-primary">
               <h5 class="card-title">Luis Rocha</h5>
               <p class="card-text">Specilist in network desing and desktop apps</p>
@@ -270,7 +276,7 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                            <input class="form-control" name="asunto" type="tel" placeholder="Asunto" required="required" data-validation-required-message="Please enter your ">
+                            <input class="form-control" name="asunto" type="text" placeholder="Asunto" required="required" data-validation-required-message="Please enter your ">
                             <p class="help-block text-danger"></p>
                             </div>
                           <div class="form-group">
